@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.benben.sw2025.views.MyListView
+        android:layout_marginTop="40dp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.benben.sw2025.views.MyListView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/data_view"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:text="还没有相关数据"
+        android:layout_marginTop="240dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

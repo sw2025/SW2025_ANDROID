@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginbg"
+    android:orientation="vertical"
+    tools:context="com.benben.sw2025.activity.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="95dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.benben.sw2025.views.XEditText
+        android:singleLine="true"
+        android:drawablePadding="15dp"
+        android:hint="请输入手机号"
+        android:layout_marginTop="36dp"
+        android:id="@+id/edit_userName"
+        android:inputType="phone"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:background="@drawable/bgfff_rad2"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:drawableLeft="@mipmap/icon_user"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <com.benben.sw2025.views.XEditText
+        android:singleLine="true"
+        android:drawablePadding="15dp"
+        android:hint="请输入密码"
+        android:layout_marginTop="18dp"
+        android:id="@+id/edit_pwd"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:background="@drawable/bgfff_rad2"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:drawableLeft="@mipmap/icon_pwd"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg00a7ed_rad2"
+        android:text="登录"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/text_register"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="我要注册"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/text_findPwd"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

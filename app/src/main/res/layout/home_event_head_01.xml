@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/work_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:id="@+id/applyEvent"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@mipmap/button_apply"
+            android:layout_gravity="bottom|end"
+            android:text="申请办事服务"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="19dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/banner_cap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bgf7f7f7_rad2"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="15dp"
+        android:text="        办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事办事"
+        android:textColor="#666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E8E8E8" />
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/avatar"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp" />
+        <RelativeLayout
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/text_tel"
+                android:id="@+id/text_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:background="#E8E8E8"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bgf8_rad2_strokeccc"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/text_info"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:paddingLeft="12dp"
+            android:drawablePadding="13dp"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:drawableLeft="@mipmap/icon_info"
+            android:text="系统消息"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <TextView
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/text_safe"
+            android:layout_marginTop="1px"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:paddingLeft="12dp"
+            android:drawablePadding="13dp"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:drawableLeft="@mipmap/icon_safe"
+            android:text="我的账户"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <TextView
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/text_enterprise"
+            android:layout_marginTop="1px"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:paddingLeft="12dp"
+            android:drawablePadding="13dp"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:drawableLeft="@mipmap/icon_enterprise"
+            android:text="企业认证"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <TextView
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/text_expert"
+            android:layout_marginTop="1px"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:paddingLeft="12dp"
+            android:drawablePadding="13dp"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:drawableLeft="@mipmap/icon_expert"
+            android:text="专家认证"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <TextView
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/text_set"
+            android:layout_marginTop="1px"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:paddingLeft="12dp"
+            android:drawablePadding="13dp"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:drawableLeft="@mipmap/icon_setting"
+            android:text="设置"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+    </LinearLayout>
+
+</LinearLayout>

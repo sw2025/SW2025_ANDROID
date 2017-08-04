@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.benben.sw2025.activity.HomeExpertActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="我是专家"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_change"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@mipmap/icon_switch"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:text="切换身份"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="44dp"
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:text="Hello World!" />
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:layout_gravity="bottom"
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+    </com.ashokvarma.bottomnavigation.BottomNavigationBar>
+
+</android.support.design.widget.CoordinatorLayout>
