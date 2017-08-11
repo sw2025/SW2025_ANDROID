@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f8f8"
+    tools:context="com.benben.sw2025.activity.PersonalActivity">
+
+    <include layout="@layout/common_head_view" />
+
+    <RelativeLayout
+        android:background="#fff"
+        android:id="@+id/relative_icon"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="#333"
+            android:text="头像"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.benben.sw2025.views.MyIconImageView
+            android:id="@+id/image_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp"
+            android:layout_centerVertical="true"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+        <ImageView
+            android:paddingRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="#e8e8e8"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:text="昵称："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_nickName"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="#e8e8e8"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:text="手机号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

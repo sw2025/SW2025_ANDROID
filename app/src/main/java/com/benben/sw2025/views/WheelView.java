@@ -152,9 +152,10 @@ public class WheelView extends View {
             centerItemHeight = itemHeight;
             centerItemTop = (height - getPaddingTop() - getPaddingBottom()) / 2 + getPaddingTop() - centerItemHeight / 2;
             centerItemBottom = (height - getPaddingTop() - getPaddingBottom()) / 2 + getPaddingTop() + centerItemHeight / 2;
-            shader = new LinearGradient(0, 0, 0, height, new int[]{
-                    0xFFFFFFFF, 0xAAFFFFFF, 0x00FFFFFF, 0x00FFFFFF, 0xAAFFFFFF, 0xFFFFFFFF
-            }, new float[]{
+            shader = new LinearGradient(0, 0, 0, height,
+                    //new int[]{0xFFFFFFFF, 0xAAFFFFFF, 0x00FFFFFF, 0x00FFFFFF, 0xAAFFFFFF, 0xFFFFFFFF}
+                    new int[]{0x00FFFFFF,0x00FFFFFF,0x00FFFFFF,0x00FFFFFF,0x00FFFFFF,0x00FFFFFF}
+                    , new float[]{
                     0.0f, centerItemTop / height, centerItemTop / height, centerItemBottom / height, centerItemBottom / height, 1.0f
             }, Shader.TileMode.REPEAT);
             coverPaint.setShader(shader);

@@ -1,7 +1,5 @@
 package com.benben.sw2025.tools;
 
-import java.io.File;
-
 /**
  * Created by 牛海丰 on 2016/07/19 0029.
  */
@@ -20,13 +18,19 @@ public class Url {
     public static final String eventType = IP + "eventType" ;
     public static final String myexpert = IP + "expert/myexpert?token=%s" ;
     public static final String eventApply = IP + "event/eventapply?token=%s" ;
+    public static final String authMe = IP + "authMe?token=%s" ;
+    public static final String mySysInfo = IP + "mySysInfo?token=%s" ;
+
+
+    // 供求首页
+    public static final String myNeed = IP + "need/myneed?token=%s" ;
 
 
     //头像路径
     //public static final String IconPath = SDUtil.getSDPath() + File.separator + "ziya"+ File.separator + "icon.png" ;
 
     //图片
-    //public static final String FileIP =  "http://images.ziyawang.com";
+    public static final String FileIP =  "http://images.ziyawang.com";
     //public static final String Rule = "http://files.ziyawang.com/law.html" ;
 
 

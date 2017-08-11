@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.benben.sw2025.activity.RegisterEnterpriseActivity">
+
+    <include layout="@layout/common_head_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--企业全称-->
+            <RelativeLayout
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+                <TextView
+                    android:id="@+id/text_left01"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:text="企业全称："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <com.benben.sw2025.views.XEditText
+                    android:id="@+id/x_edit_enterprise_name"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:textColor="#666"
+                    android:hint="请输入企业全称"
+                    android:textColorHint="#999"
+                    android:paddingRight="16dp"
+                    android:background="#fff"
+                    android:layout_toRightOf="@+id/text_left01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <!--1dp线-->
+            <TextView
+                android:background="#E8E8E8"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <!--企业规模-->
+            <RelativeLayout
+                android:id="@+id/relative_02"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+                <TextView
+                    android:id="@+id/text_left02"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:text="企业规模："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/image_right02"
+                    android:paddingRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/text02"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:paddingRight="16dp"
+                    android:layout_toLeftOf="@+id/image_right02"
+                    android:layout_toRightOf="@+id/text_left02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <!--1dp线-->
+            <TextView
+                android:background="#E8E8E8"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <!--所在行业-->
+            <RelativeLayout
+                android:id="@+id/relative_03"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+                <TextView
+                    android:id="@+id/text_left03"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:text="所在行业："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/image_right03"
+                    android:paddingRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/text03"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:paddingRight="16dp"
+                    android:layout_toLeftOf="@+id/image_right03"
+                    android:layout_toRightOf="@+id/text_left03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <!--1dp线-->
+            <TextView
+                android:background="#E8E8E8"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <!--地区-->
+            <RelativeLayout
+                android:id="@+id/relative_04"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+                <TextView
+                    android:id="@+id/text_left04"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:text="地        区："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/image_right04"
+                    android:paddingRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/text04"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:paddingRight="16dp"
+                    android:layout_toLeftOf="@+id/image_right04"
+                    android:layout_toRightOf="@+id/text_left04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <!--1dp线-->
+            <TextView
+                android:background="#E8E8E8"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <!--介绍-->
+            <RelativeLayout
+                android:id="@+id/relative_05"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="20dp"
+                    android:id="@+id/text_left05"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:text="介        绍："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <com.benben.sw2025.views.XEditText
+                    android:paddingTop="20dp"
+                    android:paddingStart="16dp"
+                    android:paddingBottom="20dp"
+                    android:gravity="left|top"
+                    android:minHeight="100dp"
+                    android:id="@+id/x_edit_enterprise_des"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:textColor="#666"
+                    android:hint="请输入企业介绍"
+                    android:textColorHint="#999"
+                    android:paddingRight="16dp"
+                    android:background="#fff"
+                    android:layout_toRightOf="@+id/text_left05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <!--1dp线-->
+            <TextView
+                android:background="#E8E8E8"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <!--上传营业执照-->
+            <RelativeLayout
+                android:id="@+id/relative_06"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="20dp"
+                    android:id="@+id/text_left06"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:text="上传营业执照："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <FrameLayout
+                    android:id="@+id/frame06"
+                    android:layout_marginTop="10dp"
+                    android:background="#F7F7F7"
+                    android:layout_marginRight="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_below="@+id/text_left06"
+                    android:layout_width="match_parent"
+                    android:layout_height="172dp">
+                    <ImageView
+                        android:id="@+id/image_show06"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/image_add06"
+                        android:src="@mipmap/uploadplus_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+            </RelativeLayout>
+            <!--上传宣传照片-->
+            <RelativeLayout
+                android:id="@+id/relative_07"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="20dp"
+                    android:id="@+id/text_left07"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:text="上传宣传照片："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <FrameLayout
+                    android:id="@+id/frame07"
+                    android:layout_marginTop="10dp"
+                    android:background="#F7F7F7"
+                    android:layout_marginRight="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_below="@+id/text_left07"
+                    android:layout_width="match_parent"
+                    android:layout_height="172dp">
+                    <ImageView
+                        android:id="@+id/image_show07"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/image_add07"
+                        android:src="@mipmap/uploadplus_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_submit"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="38dp"
+                android:layout_marginTop="50dp"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:background="#00a7ed"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
